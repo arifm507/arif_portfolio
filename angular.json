@@ -53,6 +53,23 @@
               ],
               "outputHashing": "all"
             },
+            "github-pages": {
+              "baseHref": "/arif_portfolio/",
+              "outputMode": "static",
+              "outputHashing": "all",
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kB",
+                  "maximumError": "1MB"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "4kB",
+                  "maximumError": "8kB"
+                }
+              ]
+            },
             "development": {
               "optimization": false,
               "extractLicenses": false,

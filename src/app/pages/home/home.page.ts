@@ -68,8 +68,16 @@ export class HomePage implements OnInit, OnDestroy {
   private setupSeo(): void {
     const profile = PROFILE;
     const origin = isPlatformBrowser(this.platformId) ? window.location.origin : '';
-    const ogImage = origin ? `${origin}${profile.photoUrl}` : profile.photoUrl;
-    const pageUrl = origin ? `${origin}/` : '/';
+    const baseHref =
+      isPlatformBrowser(this.platformId) && document.querySelector('base')?.href
+        ? document.querySelector('base')!.href
+        : `${origin}/arif_portfolio/`;
+    const ogImage = isPlatformBrowser(this.platformId)
+      ? new URL(profile.photoUrl, baseHref).href
+      : profile.photoUrl;
+    const pageUrl = isPlatformBrowser(this.platformId)
+      ? new URL('./', baseHref).href
+      : '/arif_portfolio/';
 
     this.seo.setPageMeta({
       title: 'Mohammad Arif | Software Developer & Technical Team Lead',

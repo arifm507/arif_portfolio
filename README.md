@@ -120,6 +120,7 @@ npm run verify        # build + tests
 | `npm run test`                     | Unit tests (Vitest)         |
 | `npm run test:ci`                  | Unit tests, non-interactive |
 | `npm run verify`                   | Build + test CI             |
+| `npm run build:gh-pages`           | Static build for GitHub Pages |
 | `npm run serve:ssr:arif_portfolio` | Serve SSR build locally     |
 
 
@@ -143,6 +144,21 @@ npm run verify        # build + tests
 | **LinkedIn** | [linkedin.com/in/mohd-arif-705985135](https://www.linkedin.com/in/mohd-arif-705985135/) |
 | **GitHub**   | [github.com/arifm507](https://github.com/arifm507)                                      |
 
+## Deploy to GitHub Pages
+
+**Live URL:** [https://arifm507.github.io/arif_portfolio/](https://arifm507.github.io/arif_portfolio/)
+
+```bash
+git push origin master   # triggers automatic deploy via GitHub Actions
+```
+
+Full setup guide: [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md)
+
+## Documentation
+
+- [Implementation plan](docs/PORTFOLIO_PLAN.md)
+- [Verification report](docs/VERIFICATION.md)
+- [GitHub Pages deployment](docs/DEPLOYMENT.md)
 
 ## License
 

@@ -12,8 +12,8 @@ export const PROFILE: Profile = {
   email: 'arifm507@gmail.com',
   phone: '+91 7275771008',
   location: 'Sector 143, Noida, Uttar Pradesh, India',
-  photoUrl: '/assets/images/profile.jpeg',
-  resumeUrl: '/assets/resume/Mohammad-Arif-Resume.pdf',
+  photoUrl: 'assets/images/profile.jpeg',
+  resumeUrl: 'assets/resume/Mohammad-Arif-Resume.pdf',
   linkedIn: 'https://www.linkedin.com/in/mohd-arif-705985135/',
   github: 'https://github.com/arifm507',
   typingRoles: [
