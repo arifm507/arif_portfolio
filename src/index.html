@@ -1,13 +1,70 @@
 <!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>ArifPortfolio</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
-<body>
-  <app-root></app-root>
-</body>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="utf-8" />
+    <title>Mohammad Arif | Software Developer & Technical Team Lead</title>
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Mohammad Arif — Technical Team Lead & Full-Stack Software Developer specializing in Angular, .NET Core, and cloud-native architecture."
+    />
+    <meta
+      name="keywords"
+      content="Mohammad Arif, Software Developer, Angular, .NET Core, Full-Stack Developer, Technical Team Lead"
+    />
+    <meta name="author" content="Mohammad Arif" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#0a0a0f" />
+    <meta name="color-scheme" content="dark light" />
+    <meta property="og:title" content="Mohammad Arif | Software Developer" />
+    <meta
+      property="og:description"
+      content="Technical Team Lead building scalable full-stack solutions with Angular, .NET, and cloud-native architecture."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/assets/images/profile.jpeg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="/assets/images/profile.jpeg" />
+    <link rel="preload" as="image" href="/assets/images/profile.jpeg" type="image/jpeg" fetchpriority="high" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
+    <script>
+      (function () {
+        try {
+          var theme = localStorage.getItem('arif-portfolio-theme');
+          var root = document.documentElement;
+          if (theme === 'light' || theme === 'dark') {
+            root.className = theme;
+            root.style.colorScheme = theme;
+          } else if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+            root.className = 'light';
+            root.style.colorScheme = 'light';
+          } else {
+            root.style.colorScheme = 'dark';
+          }
+          var meta = document.querySelector('meta[name="theme-color"]');
+          if (meta) {
+            meta.setAttribute('content', theme === 'light' ? '#fafafa' : '#0a0a0f');
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <app-root></app-root>
+  </body>
 </html>

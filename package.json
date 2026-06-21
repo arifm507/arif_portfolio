@@ -7,11 +7,14 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
+    "test:ci": "ng test --no-watch",
+    "verify": "npm run build && npm run test:ci",
     "serve:ssr:arif_portfolio": "node dist/arif_portfolio/server/server.mjs"
   },
   "private": true,
   "packageManager": "npm@11.13.0",
   "dependencies": {
+    "@angular/animations": "^21.2.17",
     "@angular/common": "^21.2.0",
     "@angular/compiler": "^21.2.0",
     "@angular/core": "^21.2.0",
